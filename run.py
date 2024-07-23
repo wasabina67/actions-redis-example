@@ -10,7 +10,9 @@ def main():
         port=os.getenv("REDIS_PORT", 6379),
         decode_responses=True
     )
-    print(r)
+    for _ in range(random.randint(1, 10)):
+        count = r.incr("count")
+    print(count)
 
 
 if __name__ == "__main__":
