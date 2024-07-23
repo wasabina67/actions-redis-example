@@ -1,1 +1,4 @@
+name: count
 
+on:
+  workflow_dispatch:
