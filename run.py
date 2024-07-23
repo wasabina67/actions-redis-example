@@ -14,6 +14,7 @@ def main():
         count = r.incr("count")
     print("- count")
     print(count)
+    print("- count")
 
 
 if __name__ == "__main__":
